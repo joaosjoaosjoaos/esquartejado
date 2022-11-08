@@ -29,3 +29,4 @@ while True:
         palavras.gerenciar_palavras()
     elif opcao == 3:
         jogadores.mostrar_ranking_jogadores()
+ 

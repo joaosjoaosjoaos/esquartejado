@@ -7,7 +7,7 @@ def jogar():
     def iniciar():
         palavra = random.choice(palavras.palavras)
         tentativas = 0
-        chances = 4
+        chances = 6
         erros = 0
         pontos = 0
         letras_escolhidas = []
@@ -37,6 +37,41 @@ def jogar():
             print(f"Você já fez {tentativas} tentativas erradas e ainda tem {chances - tentativas} tentativas")
             print("Esse é o estado atual:")
             print(estado_atual)
+            if tentativas == 0:
+                print("""
+                  😎
+                🫲🏻🫀🫱🏻
+                🦵🏻  🦵🏻
+                """)
+            if tentativas == 1:
+                print("""
+                  🙃
+                🫲🏻🫀🫱🏻
+                🦵🏻  
+                """)
+            if tentativas == 2:
+                print("""
+                  🤨
+                🫲🏻🫀🫱🏻
+                """)
+            if tentativas == 3:
+                print("""
+                  🥺
+                🫲🏻🫀
+                """)
+            if tentativas == 4:
+                print("""
+                  🥵
+                  🫀
+                """)
+            if tentativas == 5:
+                print("""
+                  😱
+                """)
+            if tentativas == 6:
+                print("""
+                  😵
+                """)
 
         jogadores.jogadores.append(jogador)
         jogadores.palavras.append(palavra)
